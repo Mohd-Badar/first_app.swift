@@ -10,6 +10,8 @@ import UIKit
 class HomeViewController: UIViewController {
 
     
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var nailsView: UIView!
     @IBOutlet weak var hairCutView: UIView!
     @IBOutlet weak var beautyView: UIView!
@@ -18,6 +20,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var spaView: UIView!
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var welcomeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,4 +59,21 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let name = UserDefaults.standard.string(forKey: "name") ?? "User"
+        
+        nameLabel.text = name
+        welcomeLabel.text = "Hello, \(name) 👋"
+        
+      
+        if let imageData = UserDefaults.standard.data(forKey: "profileImage") {
+            profileImageView.image = UIImage(data: imageData)
+        } else {
+            profileImageView.image = UIImage(named: "defaultProfile") 
+        }
+    }
+    
 }

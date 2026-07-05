@@ -52,7 +52,7 @@ class BusinessLoginViewController: UIViewController {
         UserDefaults.standard.set(numberField.text, forKey: "number")
         UserDefaults.standard.set(emailField.text, forKey: "email")
         
-        UserDefaults.standard.set("Individual", forKey: "userType")
+        UserDefaults.standard.set("Business", forKey: "userType")
         
         
     }

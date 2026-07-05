@@ -52,6 +52,19 @@ class ProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        nameLabel.text = UserDefaults.standard.string(forKey: "name")
+        emailField.text = UserDefaults.standard.string(forKey: "email")
+        numberField.text = UserDefaults.standard.string(forKey: "number")
+        
+        if let imageData = UserDefaults.standard.data(forKey: "profileImage") {
+            profilePhoto.image = UIImage(data: imageData)
+        }
+    }
+    
     @IBAction func editBtn(_ sender: Any) {
     }
     
