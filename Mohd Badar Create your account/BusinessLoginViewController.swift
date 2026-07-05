@@ -38,7 +38,7 @@ class BusinessLoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func businessTappedBtn(_ sender: UIButton) {
-       /* if
+        if
             nameField.text?.isEmpty == true ||
                 numberField.text?.isEmpty == true ||
                 emailField.text?.isEmpty == true {
@@ -46,7 +46,7 @@ class BusinessLoginViewController: UIViewController {
         } else {
             let vc = storyboard?.instantiateViewController(withIdentifier: "businessSuccessVC")
                     show(vc!, sender: self)
-        } */
+        }
         
         UserDefaults.standard.set(nameField.text, forKey: "name")
         UserDefaults.standard.set(numberField.text, forKey: "number")

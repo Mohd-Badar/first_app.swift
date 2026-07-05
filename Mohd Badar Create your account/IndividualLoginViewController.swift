@@ -43,7 +43,7 @@ class IndividualLoginViewController: UIViewController {
     
     @IBAction func individualTappedBtn(_ sender: Any) {
         
-      /*  if
+        if
             nameField.text?.isEmpty == true ||
                 numberField.text?.isEmpty == true ||
                 emailField.text?.isEmpty == true {
@@ -51,7 +51,7 @@ class IndividualLoginViewController: UIViewController {
         } else {
             let vc = storyboard?.instantiateViewController(withIdentifier: "individualSuccessVC")
             show(vc!, sender: self)
-        }  */
+        }
         
         UserDefaults.standard.set(nameField.text, forKey: "name")
         UserDefaults.standard.set(numberField.text, forKey: "number")
