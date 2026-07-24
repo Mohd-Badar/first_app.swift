@@ -1,10 +1,10 @@
 ## 📱 App Screenshots
 
-### Sign In Screen
-![Sign In](signInScreen.png)
-
 ### Main Screen
 ![Main Screen](mainScreen.png)
+
+### Sign In Screen
+![Sign In](signInScreen.png)
 
 ### Home Screen
 ![Home Screen](homeScreen.png)
