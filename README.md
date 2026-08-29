@@ -1,6 +1,6 @@
 ## 📱 App Screenshots
 
-### Main Screen
+### App Main Screen
 ![Main Screen](mainScreen.png)
 
 ### Sign In Screen
