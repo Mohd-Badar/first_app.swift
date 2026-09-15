@@ -1,9 +1,7 @@
-//
 //  ViewController.swift
-//  Mohd Badar Create your account
-//
+//  Create your account App UI
 //  Created by Mohd Badar on 02/07/26.
-//
+
 
 import UIKit
 
