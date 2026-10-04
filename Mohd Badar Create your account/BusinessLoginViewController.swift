@@ -1,9 +1,6 @@
-//
 //  LoginViewController.swift
 //  Mohd Badar Create your account
-//
 //  Created by Mohd Badar on 03/07/26.
-//
 
 import UIKit
 
